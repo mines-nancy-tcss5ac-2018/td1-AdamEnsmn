@@ -1,5 +1,5 @@
 import os
-os.chdir("/home/plama/Documents/Informatique")
+os.chdir("U:\Documents\Informatique\Prog1A S5\TD1_projet Euler")
 
 def tri(liste) : 
     f = open(liste, "r")
@@ -22,7 +22,7 @@ def valeur_lettre(lettre) :
     for k in range(1,27) :
         if lettre == alphabet[k] :
             return k
-    return "Lettre non trouvée, écrivez en majuscules"
+    return "Lettre non trouvÃ©e, Ã©crivez en majuscules"
 
 def valeur_prenom(prenom) : 
     somme = 0
@@ -35,7 +35,7 @@ def position_liste(prenom,liste) :
     for k in range(0,len(liste)) : 
 	if prenom1 == liste[k] :
 	    return k
-    return "Prénom non trouve"
+    return "PrÃ©nom non trouve"
 
 def score_prenom(prenom,liste):
     return position_liste( prenom,liste)*valeur_prenom(prenom)
